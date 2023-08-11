@@ -21,20 +21,25 @@
 # print(sum)
 
 # 改写为函数
-def calc(num):
-    counter = 0
-    sum = 0
-    while counter < num:
-        sum += counter
-        print(counter)
-        counter += 1
-    print(sum)
+# def calc(num):
+#     counter = 0
+#     sum = 0
+#     while counter < num:
+#         if counter%3 ==0:
+#             sum += counter
+#             print(counter)
+#         counter += 1
+#     print('能被3整除的数字',sum)
 
-while True:
-    ans = input('是否开始计算？y?n?\n')
-    if ans == 'y':
-        num = int(input('请输入你需要计算能被3整除的数字之和的数字大小？\n'))
-        calc(num)
-    else:
-        print('计算结束')
-        break
+# while True:
+#     ans = input('是否开始计算？y?n?\n')
+#     if ans == 'y':
+#         num = int(input('请输入你需要计算能被3整除的数字之和的数字大小？\n'))
+#         calc(num)
+#     else:
+#         print('计算结束')
+#         break
+
+# 列表推导式
+list123 = [i for i in range(50) if i%3 == 0]
+print(list123)
